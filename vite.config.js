@@ -9,4 +9,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'), // Optional alias for cleaner imports
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['@google/genai'], // Mark @google/genai as an external dependency
+    },
+  },
 });
