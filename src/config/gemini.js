@@ -1,5 +1,6 @@
 const GEMINI_API_KEY = "AIzaSyAA1ULNiNFjnW7fkCwx4shUthHiek-9vW0"; // Replace with your actual API key.
 
+//import { GoogleGenerativeAI } from '@google/genai'; // Use the package name directly
 import { GoogleGenerativeAI } from "/node_modules/.vite/deps/@google_generative-ai.js?v=c8c1beac";
 
 // Initialize the Google Generative AI model with the API key.
