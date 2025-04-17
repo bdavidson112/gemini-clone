@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import './Main.css'
 import { assets } from '../../assets/assets'
 import { Context } from '../../context/Context'
+import btdIcon2 from '../../assets/btd_icon2.png';
 
 const Main = () => {
 
@@ -11,7 +12,7 @@ const Main = () => {
     <div className='main'>
       <div className="nav">
         <p>Gemini</p>
-        <img src={assets.user_icon} alt="" />
+        <img src={btdIcon2} alt="BTD Icon 2" />
       </div>
         <div className="main-container">
 
@@ -19,7 +20,7 @@ const Main = () => {
             ?<>
                 <div className="greet">
                 <p><span>Hello,</span></p>
-                <p>How can I help you today?</p>
+                <p><span>How can I help you today?</span></p>
             </div>
             <div className="cards">
                 <div className="card">
@@ -63,9 +64,9 @@ const Main = () => {
                 <div className="search-box">
                     <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter Prompt Here'/>
                     <div>
-                        <img src={assets.gallery_icon} alt="" />
-                        <img src={assets.mic_icon} alt="" />
-                        {input?<img onClick={() => onSent()} src={assets.send_icon} alt="" />:null}
+                        <img className='cursor-none' src={assets.gallery_icon} alt="" />
+                        <img className='cursor-none' src={assets.mic_icon} alt="" />
+                        {input?<img onClick={() => onSent()} className='cursor' src={assets.send_icon} alt="" />:null}
                     </div>
                 </div>
                 <p className="bottom-info">Gemini may display inaccurate info, including about peaople, so double check its response.</p>

@@ -92,7 +92,12 @@
     border-radius: 50px;
 }
 
-.search-box img {
+.search-box .cursor-none {
+    width: 24px;
+    cursor: not-allowed;
+}
+
+.search-box .cursor {
     width: 24px;
     cursor: pointer;
 }
@@ -195,3 +200,4 @@
         gap: 5px;
     }
 }
+
